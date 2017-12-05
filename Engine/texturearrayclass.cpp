@@ -37,7 +37,7 @@ bool TextureArrayClass::Initialize(ID3D11Device* device, ID3D11DeviceContext* d3
 
 	// Load the second texture in.
 	//result = D3DX11CreateShaderResourceViewFromFile(device, filename2, NULL, NULL, &m_textures[1], NULL);
-	result = CreateDDSTextureFromFile(device, d3dContext, filename1, &m_texture2, &m_textures[1]);
+	result = CreateDDSTextureFromFile(device, d3dContext, filename2, &m_texture2, &m_textures[1]);
 	if(FAILED(result))
 	{
 		return false;

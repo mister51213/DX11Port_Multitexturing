@@ -37,7 +37,7 @@ float4 MultiTexturePixelShader(PixelInputType input) : SV_TARGET
     color2 = shaderTextures[1].Sample(SampleType, input.tex);
 
     // Blend the two pixels together and multiply by the gamma value.
-    blendColor = color1 * color2 * 2.0;
+    blendColor = color1* color2 * 2.0;
     
     // Saturate the final color.
     blendColor = saturate(blendColor);

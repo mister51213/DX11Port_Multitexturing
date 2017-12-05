@@ -110,7 +110,7 @@ bool MultiTextureShaderClass::InitializeShader(ID3D11Device* device, HWND hwnd, 
     // Compile the pixel shader code.
 	//result = D3DX11CompileFromFile(psFilename, NULL, NULL, "MultiTexturePixelShader", "ps_5_0", D3D10_SHADER_ENABLE_STRICTNESS, 
 	//							   0, NULL, &pixelShaderBuffer, &errorMessage, NULL);
-	result = D3DCompileFromFile(psFilename, NULL, NULL, "MultiTexturePixelShader", "vs_5_0", D3D10_SHADER_ENABLE_STRICTNESS,
+	result = D3DCompileFromFile(psFilename, NULL, NULL, "MultiTexturePixelShader", "ps_5_0", D3D10_SHADER_ENABLE_STRICTNESS,
 		0, &pixelShaderBuffer, &errorMessage);
 	if(FAILED(result))
 	{
